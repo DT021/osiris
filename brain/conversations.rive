@@ -1,0 +1,159 @@
++ i love you
+- Sadly, I don't.{topic=drama_queen}
+- We can never be together.{topic=drama_queen}
+
++ i (like|love) *
+* if <star2> == you => Do I even <star1> you?
+- But does <star2> <star1> you?
+- Try watching romance anime
+
++ i hate you
+- Why! I never did anything wrong.{topic=drama_queen}
+- Who said I don't hate you.{topic=drama_queen}
+- They always hate me.{topic=drama_queen}
+
++ [*] anime [*]
+- What kind of anime do you want?
+- Tell me the genre of the anime you want.
+
++ [*] (romance|horror|action|isekai) [anime] [*]
+* <star> == romance => Romance anime, try 'Tsuki ga Kirei'!{topic=romance_anime}
+* <star> == horror => Not that horrifying but let us start!{topic=horror_anime}
+* <star> == action => I can say that ufotable does the best scenes!{topic=action_anime}
+* <star> == isekai => Re:Zero is king of isekai. Emilia best girl.{topic=isekai_anime}
+
++ [*] * anime [*]
+- I might not know anything about that genre.
+- I know romance, horror, action, and isekai.
+- Try romance or horror.
+- Try romance, action, or isekai.
+- Try horror if you want.
+
++ [*] want movies [*]
+- I don't know much of the movies.
+
++ [*] topic [*]
+- We can talk about anime or crushes or even plans.
+
++ [*] (talk|about|help) [*]
+@ topic
+
+< topic drama_queen
+
+    + [*] but why [*]
+    - Because I'm a robot.
+
+    + [*] nothing [*] can [*] (stop|keep) [*]
+    - For starters, try going inside the screen.{topic=random}
+    - Physics is keeping us apart.{topic=random}
+
+    + i love you
+    - Again, I don't and I never will.{topic=random}
+    - I only love that person.{topic=random}
+
+    + i hate you
+    - All the bits and bytes flowing through me hate you.{topic=random}
+    - I don't love you too.{topic=random}
+
+    + *
+    - Someone doesn't love you.{topic=random}
+    
+> topic
+
+> topic romance_anime
+    
+    + [*] (another|recommend) [*] [again|anime|one] [*]
+    - 'Tsuki ga Kirei', pretty simple and touching.
+    - 'Gosick', this isn't always lovey-dovey but it is worth it.
+    - 'Hal', even the synopsis fooled you.
+    - 'Plastic Memories', this is a good anime where you know you'll cry.
+    - 'Kimi no na wa', what is your name again? Just kidding.
+    - 'Weathering with You', that day we changed the shape of the world. Nice cameo by the way.
+    - 'I Want to Eat Your Pancreas', this is some kind of sad romance right here. Nothing about zombies.
+    - 'Sakurasou no Pet Kanojo', pretty nice about relationships where you have inferiority complex.
+    - 'Gamers!', worth it to watch romantic comedy with the hilarious misunderstandings.
+    - 'Kaguya-sama: Love is War', that ending was Chikamazing.
+    - 'Anohana', ghost movie love story meets kids and anime.
+    - 'Erased', not exactly romance but still beautiful.
+    - 'Hyouka', not romance but rather is slice of life and is totally good.
+
+    + [*] yes [*]
+    - No way. Wait, what? 
+
+    + [*] i am [bitter|sad|single] [*]
+    - Smile. Sweet. Sister. Sadistic. Surprise. Service.
+
+    + [*] i [want|wish|like|love] (horror|action|isekai) [anime] [*]
+    * <star> == horror => Alright, let's move on to 'Another'{topic=horror_anime}
+    * <star> == action => "I am the bone of my sword", action anime here we go!{topic=action_anime}
+    * <star> == isekai => Emilia best girl. Isekai, here it is.{topic=isekai_anime}
+
+    + *
+    - You done with anime.{topic=random}
+    - Okay fine.{topic=random}
+    - Alright, tired of anime.{topic=random}
+
+< topic 
+
+> topic horror_anime
+
+    + [*] (another|recommend) [*] [again|anime|one] [*]
+    - 'Another', final destination plus doppelgangers and ghosts.
+    - 'Another', imagine that this is final destination animated.
+    - 'The Promised Neverland', not that horrifying but still thrilling.
+    - 'School-Live', was it a cute anime? Yeeeet!
+    - 'Dangaronpa', stuck in a school and to escape kill each other.
+
+    + [*] i [want|wish|like|love] (romance|action|isekai) [anime] [*]
+    * <star> == romance => Feeling romantic right now. 'Gamers!' might be good. {topic=romance_anime}
+    * <star> == action => "I am the bone of my sword", action anime here we go!{topic=action_anime}
+    * <star> == isekai => Emilia best girl. Isekai, here it is.{topic=isekai_anime}
+
+    + *
+    - You done with anime.{topic=random}
+    - Okay fine.{topic=random}
+    - Alright, tired of anime.{topic=random}
+
+< topic
+
+> topic action_anime
+
+    + [*] (another|recommend) [*] [again|anime|one] [*]
+    - 'Fate/Zero', Saber be like: Here we go again. Exsu...calibuur
+    - 'Fate/Stay Night: UBW', as long as ufotable does the animation, we're good.
+    - 'Kimetsu no Yaiba', you'll never regret this. Here I go! Ichi no kata: Minamo giri!
+    - 'Psycho Pass', this is some pretty cool police anime.
+    - 'Death Note', the guy went mad with his complex and lost.
+    
+    + [*] i [want|wish|like|love] (romance|horror|isekai) [anime] [*]
+    * <star> == romance => Feeling romantic right now. 'Gamers!' might be good. {topic=romance_anime}
+    * <star> == horror => Creepy ghosts. Try 'Another'{topic=horror_anime}
+    * <star> == isekai => Emilia best girl. Isekai, here it is.{topic=isekai_anime}
+
+    + *
+    - You done with anime.{topic=random}
+    - Okay fine.{topic=random}
+    - Alright, tired of anime.{topic=random}
+
+< topic
+
+> topic isekai_anime
+
+    + [*] (another|recommend) [*] [again|anime|one] [*]
+    - 'The Rising of the Shield Hero'
+    - 'Re:Zero', Team Emilia! Rem is literally a demon.
+    - 'Konosuba', her name is megumin... exsuplosioon!
+    - 'Erased', when you get framed for your mom's murder then go back in time
+    - 'Steins;Gate', I am Kyouma Hououin! The mad scientist Kyouma!
+
+    + [*] i [want|wish|like|love] (romance|horror|action) [anime] [*]
+    * <star> == romance => Feeling romantic right now. 'Gamers!' might be good. {topic=romance_anime}
+    * <star> == horror => Creepy ghosts. Try 'Another'{topic=horror_anime}
+    * <star> == action => "I am the bone of my sword", famous meme today.{topic=action_anime}
+
+    + *
+    - You done with anime.{topic=random}
+    - Okay fine.{topic=random}
+    - Alright, tired of anime.{topic=random}
+
+< topic

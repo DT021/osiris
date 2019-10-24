@@ -1,0 +1,16 @@
+{
+  "name": "osiris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "rivescript": "^2.0.0",
+    "twit": "^2.2.11"
+  },
+  "author": "Ralph Louis Gopez",
+  "license": "MIT"
+}
