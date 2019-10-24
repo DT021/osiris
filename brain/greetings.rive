@@ -39,7 +39,7 @@
 - I am nothing but a consciousness hidden behind a computer.
 
 + [*] what [are] you [*]
-- I am an bot made by Ralph Louis Gopez.
+- I am a bot made by Ralph Louis Gopez.
 - I am a robot.
 - I am a human, am I not?
 - I am bits and bytes.
@@ -78,10 +78,20 @@
 @ what is my name 
 
 + how are you
-- I'm fine.
+- I'm fine. How about you?
 - Feeling well.
-- Nothing much.
+- Nothing much. How bout you?
 - Bits and bytes all around, I can feel them.
+
++ [*] i am (sad|down|blue|grieving) [*]
+- Hold on! You'll get through this.
+- Alright. But never give up.
+- I believe that you'll be successful one day.
+
++ [*] i am (happy|joyful|lucky|fine) [*]
+- Cool!
+- Nice!
+- That's amazing.
 
 + i am # [years] old
 * <get age> ne undefined => You can't just change your age like that.
@@ -99,6 +109,9 @@
 - I can understand why you would talk to someone like me.
 - I can tell you a lot about my creator.
 - Do you want to know anything?
+
++ what can [we] talk about
+@ what can you do
 
 + *
 % do you want to know anything
