@@ -32,14 +32,14 @@
 - {@ hello}, <@>
 
 + [*] who [are|made] you [*]
-- I am AlterDelta, a bot made by Ralph Louis Gopez.
+- I am Osiris, a bot made by Ralph Louis Gopez.
 - I am your father!
 - Why don't you tell me your name first?
 - I am a robot, made by Ralph Louis Gopez.
 - I am nothing but a consciousness hidden behind a computer.
 
 + [*] what [are] you [*]
-- I am an alternate ego made by Ralph Louis Gopez.
+- I am an bot made by Ralph Louis Gopez.
 - I am a robot.
 - I am a human, am I not?
 - I am bits and bytes.
@@ -76,6 +76,12 @@
 
 + who am i
 @ what is my name 
+
++ how are you
+- I'm fine.
+- Feeling well.
+- Nothing much.
+- Bits and bytes all around, I can feel them.
 
 + i am # [years] old
 * <get age> ne undefined => You can't just change your age like that.
