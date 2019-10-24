@@ -18,7 +18,7 @@ const authentication = {
 // @Twitter 
 const twitter = new ( require('twit') )(authentication);
 
-const stream = twitter.stream('statuses/filter', { track: '@osiris_tweets'} );
+const stream = twitter.stream('statuses/filter', { track: '@osiris_tweets, osiris'} );
 
 // @RiveScript
 let robot = new ( require('rivescript') )();
@@ -96,7 +96,7 @@ stream.on('tweet', async function(tweet) {
 
     const reply = await robot.reply(username, content);
 
-    tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply}\n—AlterDelta` })
+    tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply}` })
 
     console.log('Tweet Added to Queue');
 
