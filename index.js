@@ -98,9 +98,9 @@ stream.on('tweet', function(tweet) {
       
       tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply}` });
 
+      console.log('Tweet Added to Queue');
+      
     }).catch(error => console.log(error) );
-
-    console.log('Tweet Added to Queue');
 
   }
 
