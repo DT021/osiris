@@ -21,10 +21,11 @@ const twitter = new ( require('twit') )(authentication);
 const stream = twitter.stream('statuses/filter', { track: '@osiris_tweets, osiris'} );
 
 // @RiveScript
-let robot = new ( require('rivescript') )();
+const robot = new ( require('rivescript') )();
 
 let tweetQueue = []; let limits = { stream: false, tweet: false, delay: null };
 
+const shortUniqueId = new ( require('short-unique-id') )();
 
 // @Stream Handlers
 stream.on('connect', async function() {
@@ -96,7 +97,7 @@ stream.on('tweet', function(tweet) {
 
     robot.reply(username, content).then(function(reply) {
       
-      tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply}` });
+      tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply} [:${shortUniqueId.randomUUID(6)}]` });
 
       console.log('Tweet Added to Queue');
       
