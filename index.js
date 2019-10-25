@@ -97,7 +97,7 @@ stream.on('tweet', function(tweet) {
 
     robot.reply(username, content).then(function(reply) {
       
-      tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply} [:${shortUniqueId.randomUUID(6)}]` });
+      tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply} [${shortUniqueId.randomUUID(7)}]` });
 
       console.log('Tweet Added to Queue');
       
