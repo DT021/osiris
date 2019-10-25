@@ -76,7 +76,7 @@ stream.on('reconnect', function() {
 
 });
 
-stream.on('tweet', async function(tweet) {
+stream.on('tweet', function(tweet) {
 
   console.log('Streamed Tweet Received');
 
@@ -94,9 +94,11 @@ stream.on('tweet', async function(tweet) {
 
     robot.sortReplies();
 
-    const reply = await robot.reply(username, content);
+    robot.reply(username, content).then(function(reply) {
+      
+      tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply}` });
 
-    tweetQueue.push({ in_reply_to_status_id: tweet.id_str, status: `@${username}\n${reply}` })
+    }).catch(error => console.log(error) );
 
     console.log('Tweet Added to Queue');
 

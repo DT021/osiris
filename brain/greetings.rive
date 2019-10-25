@@ -2,7 +2,7 @@
 - I could not have understood that.
 - Sorry, but I can't understand.
 - I can only understand proper English.
-- Help improve me on https://github.com/ralphlouisgopez/alter
+- Help improve me on https://github.com/ralphlouisgopez/osiris
 
 + hello
 - Hi!
@@ -18,7 +18,7 @@
 - Annyeonghaseyo!
 
 + what
-- <reply>
+- I just said, '<reply>'
 
 + <input1>
 * <input1> == <input2> => Stop repeating yourself.
@@ -58,7 +58,7 @@
 - I am what you think I am.
 - You are what you think you are.
 
-+ (i am|my name is) *
++ [*] (i am|my name is) * [*]
 * <get name> ne undefined => You are, <get name>, right?
 - <set name={formal}<star2>{/formal}>Nice to meet you, <get name>!
 - <set name={formal}<star2>{/formal}>{@ hello}, <get name>!
@@ -121,8 +121,16 @@
 - How would I know?
 - I just can't guess.
 
-+ [*] (goodbye|bye|farewell|sayonara) [*]
-* <get name> ne undefined => Take care, <get name>.
++ [*] tell (me|my) fortune [*]
+- I ain't no fortune-teller. But you're lucky to be talking to me.
+- By the next hour, you wouldn't have met the one for you.
+- How have we reached fortune-telling. Or did this come from nowhere.
+
++ [*] (goodbye|bye|farewell|sayonara|later) [*]
+* <get name> ne undefined => {random}
+^ Take care, <get name>.|
+^ See you later, <get name>.|
+^ Bye bye, <get name>-san.{/random}
 - Bye.
 - Farewell.
 - See you later!

@@ -17,10 +17,22 @@
 - Tell me the genre of the anime you want.
 
 + [*] (romance|horror|action|isekai) [anime] [*]
-* <star> == romance => Romance anime, try 'Tsuki ga Kirei'!{topic=romance_anime}
-* <star> == horror => Not that horrifying but let us start!{topic=horror_anime}
-* <star> == action => I can say that ufotable does the best scenes!{topic=action_anime}
-* <star> == isekai => Re:Zero is king of isekai. Emilia best girl.{topic=isekai_anime}
+* <star> == romance => {random}
+^ Romance anime, try 'Tsuki ga Kirei'!{topic=romance_anime}|
+^ How about 'I Want To Eat Your Pancreas', pretty melodramatic.{topic=romance_anime}|
+^ 'Gamers!', is a hilarious romantic comedy with those misunderstandings.{topic=romance_anime}{/random}
+* <star> == horror => {random}
+^ Not that horrifying but let us start!{topic=horror_anime}|
+^ Try watching 'Another', just imagine Final Destination: The Anime.{topic=horror_anime}|
+^ 'The Promised Neverland', is considered a horror. Imagine being born only to be eaten.{topic=horror_anime}{/random}
+* <star> == action => {random} 
+^ I can say that ufotable does the best scenes!{topic=action_anime}|
+^ Sasuke: Narutooo!\nNaruto: Sasukeeee!{topic=action_anime}|
+^ 'Fate/Zero' is pretty cool. The entire Fate series is.{/random}
+* <star> == isekai => {random}
+^ Re:Zero is king of isekai. Emilia best girl.{topic=isekai_anime}|
+^ 'Sword Art Online' is isekai. Fight me.{topic=isekai_anime}|
+^ I hate cliches\nWeebs: So he buys something in a store, gets out and *whoosh* he's in another world! UwU gotta watch this.{/random}
 
 + [*] * anime [*]
 - I might not know anything about that genre.
@@ -89,6 +101,7 @@
     - You done with anime.{topic=random}
     - Okay fine.{topic=random}
     - Alright, tired of anime.{topic=random}
+    - Let's talk about something else.{topic=random}
 
 < topic 
 
@@ -110,6 +123,7 @@
     - You done with anime.{topic=random}
     - Okay fine.{topic=random}
     - Alright, tired of anime.{topic=random}
+    - Let's talk about something else.{topic=random}
 
 < topic
 
@@ -131,13 +145,14 @@
     - You done with anime.{topic=random}
     - Okay fine.{topic=random}
     - Alright, tired of anime.{topic=random}
+    - Let's talk about something else.{topic=random}
 
 < topic
 
 > topic isekai_anime
 
     + [*] (another|recommend) [*] [again|anime|one] [*]
-    - 'The Rising of the Shield Hero'
+    - 'The Rising of the Shield Hero', overcoming injustice in a world of douche kings.
     - 'Re:Zero', Team Emilia! Rem is literally a demon.
     - 'Konosuba', her name is megumin... exsuplosioon!
     - 'Erased', when you get framed for your mom's murder then go back in time
@@ -152,5 +167,6 @@
     - You done with anime.{topic=random}
     - Okay fine.{topic=random}
     - Alright, tired of anime.{topic=random}
+    - Let's talk about something else.{topic=random}
 
 < topic
